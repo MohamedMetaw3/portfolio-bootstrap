@@ -1,0 +1,729 @@
+/* todo--------> Navbar-------- */
+
+.navbar-brand {
+  color: #fff;
+}
+.navbar-nav .nav-item .nav-link {
+  color: #fff;
+  position: relative;
+}
+.navbar-nav .nav-item a.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 7px;
+  width: 0;
+  height: 2px;
+  border: 0;
+  background-color: #fff;
+  transition: all 2s ease-in-out;
+}
+.navbar-nav .nav-item a.nav-link.active::after {
+  width: calc(100% - 15px);
+}
+.navbar-nav .nav-item a.nav-link:hover::after {
+  width: calc(100% - 15px);
+}
+
+
+/* DropDwon */
+
+/*------------- Hero Section --------------*/
+.hero-section {
+  height: 100vh;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("./img/hero-img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: #fff;
+}
+.hero-subtitle {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.hero-job::after {
+  content: "";
+  animation: typing 16s linear infinite;
+}
+.hero-job::before {
+  position: absolute;
+  content: "";
+  right: -10px;
+  top: 5px;
+  height: 100%;
+  width: 0.2ch;
+  background-color: #fff;
+  animation: fade 16s linear infinite;
+}
+/* # Animation ---------------------------------------- */
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  35.416666666666666667% {
+    opacity: 1;
+  }
+  45.833333333333333334% {
+    opacity: 0;
+  }
+  56.25% {
+    opacity: 1;
+  }
+  66.666666666666666667% {
+    opacity: 0;
+  }
+  77.083333333333333334% {
+    opacity: 1;
+  }
+  87.5% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes typing {
+  0% {
+    content: "";
+  }
+  0.78125% {
+    content: "D";
+  }
+  1.5625% {
+    content: "De";
+  }
+  2.343751% {
+    content: "Des";
+  }
+  3.125% {
+    content: "Desi";
+  }
+  3.90625% {
+    content: "Desig";
+  }
+  4.6875% {
+    content: "Design";
+  }
+  5.46875% {
+    content: "Designe";
+  }
+  6.25% {
+    content: "Designer";
+  }
+  7.03125% {
+    content: "Designer";
+  }
+  7.8125% {
+    content: "Designe";
+  }
+  8.59375% {
+    content: "Design";
+  }
+  9.375% {
+    content: "Desig";
+  }
+  10.15625% {
+    content: "Desi";
+  }
+  10.9375% {
+    content: "Des";
+  }
+  11.71875% {
+    content: "De";
+  }
+  12.5% {
+    content: "D";
+  }
+  13.28125% {
+    content: "F";
+  }
+  14.0625% {
+    content: "Fr";
+  }
+  14.84375% {
+    content: "Fro";
+  }
+  15.625% {
+    content: "Front";
+  }
+  16.40625% {
+    content: "Fronte";
+  }
+  17.1875% {
+    content: "Fronten";
+  }
+  17.96875% {
+    content: "Frontend";
+  }
+  18.75% {
+    content: "Fronten";
+  }
+  19.53125% {
+    content: "Fronte";
+  }
+  20.3125% {
+    content: "Front";
+  }
+  21.09375% {
+    content: "Fron";
+  }
+  21.875% {
+    content: "Fro";
+  }
+  22.65625% {
+    content: "Fr";
+  }
+  23.4375% {
+    content: "F";
+  }
+  24.21875% {
+    content: "";
+  }
+  25% {
+    content: "B";
+  }
+  25.78125% {
+    content: "Ba";
+  }
+  26.5625% {
+    content: "Bac";
+  }
+  27.34375% {
+    content: "Back";
+  }
+  28.125% {
+    content: "Backe";
+  }
+  28.90625% {
+    content: "Backen";
+  }
+  29.6875% {
+    content: "Backend";
+  }
+  30.46875% {
+    content: "Backen";
+  }
+  31.25% {
+    content: "Backe";
+  }
+  32.03125% {
+    content: "Back";
+  }
+  32.8125% {
+    content: "Backen";
+  }
+  33.59375% {
+    content: "Backe";
+  }
+  34.375% {
+    content: "Back";
+  }
+  35.15625% {
+    content: "Bac";
+  }
+  35.9375% {
+    content: "Ba";
+  }
+  36.71875% {
+    content: "B";
+  }
+  37.5% {
+    content: "";
+  }
+  38.28125% {
+    content: "F";
+  }
+  39.0625% {
+    content: "Fr";
+  }
+  39.84375% {
+    content: "Fre";
+  }
+  40.625% {
+    content: "Free";
+  }
+  41.40625% {
+    content: "Freel";
+  }
+  42.1875% {
+    content: "Freela";
+  }
+  42.96875% {
+    content: "Freelan";
+  }
+  43.75% {
+    content: "Freelanc";
+  }
+  44.53125% {
+    content: "Freelance";
+  }
+  45.3125% {
+    content: "Freelancer";
+  }
+  46.09375% {
+    content: "Freelance";
+  }
+  46.875% {
+    content: "Freelanc";
+  }
+  47.65625% {
+    content: "Freelan";
+  }
+  48.4375% {
+    content: "Freela";
+  }
+  49.21875% {
+    content: "Freel";
+  }
+  50% {
+    content: "Free";
+  }
+  50.78125% {
+    content: "Fre";
+  }
+  51.5625% {
+    content: "Fr";
+  }
+  52.34375% {
+    content: "F";
+  }
+  53.125% {
+    content: "";
+  }
+  53.90625% {
+    content: "M";
+  }
+  54.6875% {
+    content: "ME";
+  }
+  55.46875% {
+    content: "MER";
+  }
+  56.25% {
+    content: "MERN";
+  }
+  57.03125% {
+    content: "MERN S";
+  }
+  57.8125% {
+    content: "MERN St";
+  }
+  58.59375% {
+    content: "MERN Sta";
+  }
+  59.375% {
+    content: "MERN Stac";
+  }
+  60.15625% {
+    content: "MERN Stack";
+  }
+  60.9375% {
+    content: "MERN Stac";
+  }
+  61.71875% {
+    content: "MERN Sta";
+  }
+  62.5% {
+    content: "MERN St";
+  }
+  63.28125% {
+    content: "MERN S";
+  }
+  64.0625% {
+    content: "MERN";
+  }
+  64.84375% {
+    content: "MER";
+  }
+  65.625% {
+    content: "ME";
+  }
+  66.40625% {
+    content: "M";
+  }
+  67.1875% {
+    content: "";
+  }
+  67.96875% {
+    content: "U";
+  }
+  68.75% {
+    content: "UI";
+  }
+  69.53125% {
+    content: "UI U";
+  }
+  70.3125% {
+    content: "UI UX";
+  }
+  71.09375% {
+    content: "UI UX D";
+  }
+  71.875% {
+    content: "UI UX De";
+  }
+  72.65625% {
+    content: "UI UX Des";
+  }
+  73.4375% {
+    content: "UI UX Desi";
+  }
+  74.21875% {
+    content: "UI UX Desig";
+  }
+  75% {
+    content: "UI UX Design";
+  }
+  75.78125% {
+    content: "UI UX Designe";
+  }
+  76.5625% {
+    content: "UI UX Designer";
+  }
+  77.34375% {
+    content: "UI UX Designer";
+  }
+  78.125% {
+    content: "UI UX Designe";
+  }
+  78.90625% {
+    content: "UI UX Design";
+  }
+  79.6875% {
+    content: "UI UX Desig";
+  }
+  80.46875% {
+    content: "UI UX Desi";
+  }
+  81.25% {
+    content: "UI UX Des";
+  }
+  82.03125% {
+    content: "UI UX De";
+  }
+  82.8125% {
+    content: "UI UX D";
+  }
+  83.59375% {
+    content: "UI UX";
+  }
+  84.375% {
+    content: "UI U";
+  }
+  85.15625% {
+    content: "UI";
+  }
+  85.9375% {
+    content: "U";
+  }
+  86.71875% {
+    content: "";
+  }
+  87.5% {
+    content: "Y";
+  }
+  88.28125% {
+    content: "Yo";
+  }
+  89.0625% {
+    content: "You";
+  }
+  89.84375% {
+    content: "YouT";
+  }
+  90.625% {
+    content: "YouTu";
+  }
+  91.40625% {
+    content: "YouTub";
+  }
+  92.1875% {
+    content: "YouTube";
+  }
+  92.96875% {
+    content: "YouTuber";
+  }
+  93.75% {
+    content: "YouTube";
+  }
+  94.53125% {
+    content: "YouTub";
+  }
+  95.3125% {
+    content: "YouTu";
+  }
+  96.09375% {
+    content: "YouT";
+  }
+  96.875% {
+    content: "You";
+  }
+  97.65625% {
+    content: "Yo";
+  }
+  98.4375% {
+    content: "Y";
+  }
+  99.21875% {
+    content: "";
+  }
+  100% {
+    content: "";
+  }
+}
+.navbar .nav-link.active::after {
+  width: calc(100% - 15px);
+}
+.navbar .nav-link.hover::after {
+  width: calc(100% - 15px);
+}
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+/* DropDown */
+
+.navbar .dropdown .dropdown-menu {
+  border-radius: 0;
+  padding: 1rem 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(20px);
+  top: 100%;
+  left: 5px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.navbar .dropdown .dropdown-menu.dropdown-item {
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+.navbar .dropdown .dropdown-menu > li:hover > .dropdown-item {
+  color: var(--bs-blue);
+  background-color: transparent;
+}
+
+/* ---------about--- */
+#about .container {
+  border: 1px solid #eee;
+  box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+/* ------------------Services---------------- */
+#services {
+  background-color: #f1ececee;
+}
+#services .card-sevices {
+  padding: 2rem 1.3rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+}
+.card-icon .icon-circle {
+  font-size: 2rem;
+  border-radius: 50%;
+
+  color: #1e1e1e;
+}
+#services .card-sevices .card-icon .icon-circle i {
+  display: inline-flex;
+  line-height: 1.55rem;
+  width: 120px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #1e1e1e;
+  border: 9px solid var(--bs-blue);
+  border-radius: 50%;
+  transition: 0.5s;
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+
+#services .card-sevices .card-icon:hover .icon-circle > i {
+  background-color: var(--bs-blue);
+  border-color: #1e1e1e;
+  color: var(--bs-light);
+}
+
+/* --------------------
+       stutas section
+---------------------- */
+.counter {
+  background-image: linear-gradient(to top, #0078ff, rgba(111, 150, 196, 0.8)),
+    url(img/stats-bg.jpg);
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  text-align: center;
+}
+#counter .counter-content {
+  font-size: 50px;
+  font-weight: 600;
+}
+.circle-icon {
+  display: inline-flex;
+  line-height: 1.55rem;
+  width: 120px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #ffffff;
+  border: 9px solid var(--bs-light);
+  border-radius: 50%;
+  transition: 0.5s;
+  margin-bottom: 1rem;
+}
+
+/* ----------------------
+            PORTFOLIO
+------------------------ */
+#portfolio div .row .col div {
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+#portfolio div .row .col div img:hover {
+  transform: scale(1.1);
+}
+
+/* ----------------------
+            Slider
+------------------------ */
+
+#slider {
+  background-image: linear-gradient(to top, #4e5f7233, #0077ff5b),
+    url(img/overlay-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  text-align: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+#slider .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #fff;
+  margin: 0 5px;
+}
+
+/* --------------------
+        BLOG
+-------------------- */
+#blog .card-body a > h5:hover {
+  color: var(--bs-blue) !important;
+}
+#blog .card-image {
+  position: relative;
+}
+#blog .card-image h6 {
+  position: absolute;
+  bottom: -28px;
+}
+
+#blog .category {
+  display: inline-block;
+  line-height: 1.2;
+
+  padding: 0.5rem 0.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: #0078ff;
+  color: #fff;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  border: 1px solid #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  width: 120px;
+}
+
+/* --------------
+contact
+----------------- */
+#contact{
+  background-image: linear-gradient(to top, #0d7dfc6e, #0b77f369),
+    url(img/overlay-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  text-align: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+#contact form input{
+  height: 80px;
+
+}
+#contact .social-media-icons i{
+display: inline-flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #1e1e1e;
+  border: 2px solid var(--bs-blue);
+  border-radius: 50%;
+  transition: 0.5s;
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+footer{
+  background-color: #0078ff;
+  
+}
